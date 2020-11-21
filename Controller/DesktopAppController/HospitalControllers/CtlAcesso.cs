@@ -1,48 +1,35 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿using HospitalModels;
+using Newtonsoft.Json;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
-using HospitalModels;
-using System.Net;
-using System.IO;
 
 namespace HospitalControllers
 {
     public class CtlAcesso
-    {   
+    {
+        private readonly HttpClient _httpClient;
+
         public CtlAcesso()
         {
-            
+            _httpClient = new HttpClient();
         }
 
-        public MdlAcesso GetUsuarioAsync(string login, string senha)
+        public async Task<MdlAcesso> GetUsuarioAsync(string login, string senha)
         {
             try
             {
-                var requisicaoWeb = WebRequest.CreateHttp($"http://localhost:5000/api/usuario/{login}/{senha}");
+                HttpResponseMessage _response = await _httpClient.GetAsync("https://run.mocky.io/v3/524da213-ce4a-4ca0-81cb-57c3e451c0fb");
 
-                requisicaoWeb.Method = "GET";
-                requisicaoWeb.UserAgent = "RequisicaoWebApiAtila";
+                string _body = await _response.Content.ReadAsStringAsync();
 
-                using (var resposta = requisicaoWeb.GetResponse())
-                {
-                    var streamDados = resposta.GetResponseStream();
-                    StreamReader reader = new StreamReader(streamDados);
-                    object objResponse = reader.ReadToEnd();
+                MdlAcesso usuario = JsonConvert.DeserializeObject<MdlAcesso>(_body);
 
-                    var usuario = JsonConvert.DeserializeObject<MdlAcesso>(objResponse.ToString());
-
-                    return usuario;
-                }
+                return usuario;
             }
             catch (HttpRequestException ex)
             {
                 throw ex;
             }
         }
-
     }
 }
