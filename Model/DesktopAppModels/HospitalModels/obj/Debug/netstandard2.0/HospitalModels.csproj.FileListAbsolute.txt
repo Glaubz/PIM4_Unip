@@ -1,0 +1,9 @@
+P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Model\DesktopAppModels\HospitalModels\bin\Debug\netstandard2.0\HospitalModels.deps.json
+P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Model\DesktopAppModels\HospitalModels\bin\Debug\netstandard2.0\HospitalModels.dll
+P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Model\DesktopAppModels\HospitalModels\bin\Debug\netstandard2.0\HospitalModels.pdb
+P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Model\DesktopAppModels\HospitalModels\obj\Debug\netstandard2.0\HospitalModels.csprojAssemblyReference.cache
+P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Model\DesktopAppModels\HospitalModels\obj\Debug\netstandard2.0\HospitalModels.AssemblyInfoInputs.cache
+P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Model\DesktopAppModels\HospitalModels\obj\Debug\netstandard2.0\HospitalModels.AssemblyInfo.cs
+P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Model\DesktopAppModels\HospitalModels\obj\Debug\netstandard2.0\HospitalModels.csproj.CoreCompileInputs.cache
+P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Model\DesktopAppModels\HospitalModels\obj\Debug\netstandard2.0\HospitalModels.dll
+P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Model\DesktopAppModels\HospitalModels\obj\Debug\netstandard2.0\HospitalModels.pdb

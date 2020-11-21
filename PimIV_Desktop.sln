@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controller", "Controller", "{8220E1CD-1CE8-49DF-A30B-BA9AE3AD8ED9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{0ECD0F10-478E-49B5-85AC-6133513A650B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{4920B9B8-86D4-4529-AEEE-C11E6205391B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "Interface\WindowsForms\WindowsForms.csproj", "{92193E44-3A34-4452-83D0-F43C9351069A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesktopAppControllers", "DesktopAppControllers", "{FD47D68F-27BB-4685-A1A4-072CE8FFDED5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesktopAppModels", "DesktopAppModels", "{DD2550E6-471E-425D-A5E5-292B903A6894}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalControllers", "Controller\DesktopAppController\HospitalControllers\HospitalControllers.csproj", "{70F131D8-4BFC-4C5E-BB07-1AE7601898CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalModels", "Model\DesktopAppModels\HospitalModels\HospitalModels.csproj", "{BF6D892F-A22C-4FAF-9E29-8E641728620B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92193E44-3A34-4452-83D0-F43C9351069A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92193E44-3A34-4452-83D0-F43C9351069A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92193E44-3A34-4452-83D0-F43C9351069A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92193E44-3A34-4452-83D0-F43C9351069A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F131D8-4BFC-4C5E-BB07-1AE7601898CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F131D8-4BFC-4C5E-BB07-1AE7601898CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F131D8-4BFC-4C5E-BB07-1AE7601898CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F131D8-4BFC-4C5E-BB07-1AE7601898CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF6D892F-A22C-4FAF-9E29-8E641728620B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6D892F-A22C-4FAF-9E29-8E641728620B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6D892F-A22C-4FAF-9E29-8E641728620B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6D892F-A22C-4FAF-9E29-8E641728620B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92193E44-3A34-4452-83D0-F43C9351069A} = {0ECD0F10-478E-49B5-85AC-6133513A650B}
+		{FD47D68F-27BB-4685-A1A4-072CE8FFDED5} = {8220E1CD-1CE8-49DF-A30B-BA9AE3AD8ED9}
+		{DD2550E6-471E-425D-A5E5-292B903A6894} = {4920B9B8-86D4-4529-AEEE-C11E6205391B}
+		{70F131D8-4BFC-4C5E-BB07-1AE7601898CD} = {FD47D68F-27BB-4685-A1A4-072CE8FFDED5}
+		{BF6D892F-A22C-4FAF-9E29-8E641728620B} = {DD2550E6-471E-425D-A5E5-292B903A6894}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41C78E08-8654-4378-8A7D-149FDBC37A35}
+	EndGlobalSection
+EndGlobal
