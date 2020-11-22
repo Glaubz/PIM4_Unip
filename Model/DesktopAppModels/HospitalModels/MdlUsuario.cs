@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HospitalModels
 {
-    public class MdlAcesso
+    public class MdlUsuario
     {
         public int Id { get; set; }
         public string Login { get; set; }
@@ -12,6 +12,6 @@ namespace HospitalModels
         public string Email { get; set; }
         public bool Ativo { get; set; }
         public int PerfilId { get; set; }
-        public Perfil Perfil { get; set; }
+        public MdlPerfil Perfil { get; set; }
     }
 }

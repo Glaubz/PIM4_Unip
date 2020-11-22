@@ -20,9 +20,9 @@ namespace WindowsForms.Forms
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-            CtlAcesso acesso = new CtlAcesso();
-            var usuario = acesso.GetUsuarioAsync(TxtUsuario.Text, TxtSenha.Text);
-            if (usuario == null)
+            CtlUsuario usuario = new CtlUsuario();
+            var _usuario = usuario.GetUsuarioAsync(TxtUsuario.Text, TxtSenha.Text);
+            if (_usuario == null)
             {
                 MessageBox.Show("Login ou senha inválido");
             }

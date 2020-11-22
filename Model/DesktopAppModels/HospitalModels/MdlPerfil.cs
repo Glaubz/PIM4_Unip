@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HospitalModels
 {
-    public class Perfil
+    public class MdlPerfil
     {
         public int Id { get; set; }
         public string Descricao { get; set; }

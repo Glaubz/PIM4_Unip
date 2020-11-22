@@ -15,7 +15,6 @@ P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV
 P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Interface\WindowsForms\obj\Debug\netcoreapp3.1\WindowsForms.Forms.Medicos.resources
 P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Interface\WindowsForms\obj\Debug\netcoreapp3.1\WindowsForms.Forms.Menu.resources
 P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Interface\WindowsForms\obj\Debug\netcoreapp3.1\WindowsForms.Forms.Pacientes.resources
-P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Interface\WindowsForms\obj\Debug\netcoreapp3.1\WindowsForms.Forms.Remedios.resources
 P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Interface\WindowsForms\obj\Debug\netcoreapp3.1\WindowsForms.csproj.GenerateResource.cache
 P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Interface\WindowsForms\obj\Debug\netcoreapp3.1\WindowsForms.AssemblyInfoInputs.cache
 P:\Programas\OneDrive\OneDrive - Fatec Centro Paula Souza\Unip\4-SEMESTRE\PIM IV\Projeto\PimIV\PIM4\PimIV_Desktop\Interface\WindowsForms\obj\Debug\netcoreapp3.1\WindowsForms.AssemblyInfo.cs

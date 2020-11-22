@@ -32,7 +32,6 @@
             this.BtnConsultas = new System.Windows.Forms.Button();
             this.BtnPacientes = new System.Windows.Forms.Button();
             this.BtnMedicos = new System.Windows.Forms.Button();
-            this.BtnRemedios = new System.Windows.Forms.Button();
             this.BtnFuncionarios = new System.Windows.Forms.Button();
             this.BtnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -79,27 +78,15 @@
             this.BtnMedicos.Name = "BtnMedicos";
             this.BtnMedicos.Size = new System.Drawing.Size(119, 33);
             this.BtnMedicos.TabIndex = 1;
-            this.BtnMedicos.Text = "Medicos";
+            this.BtnMedicos.Text = "Médicos";
             this.BtnMedicos.UseVisualStyleBackColor = true;
             this.BtnMedicos.Click += new System.EventHandler(this.BtnMedicos_Click);
-            // 
-            // BtnRemedios
-            // 
-            this.BtnRemedios.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnRemedios.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnRemedios.Location = new System.Drawing.Point(344, 266);
-            this.BtnRemedios.Name = "BtnRemedios";
-            this.BtnRemedios.Size = new System.Drawing.Size(119, 33);
-            this.BtnRemedios.TabIndex = 1;
-            this.BtnRemedios.Text = "Remédios";
-            this.BtnRemedios.UseVisualStyleBackColor = true;
-            this.BtnRemedios.Click += new System.EventHandler(this.BtnRemedios_Click);
             // 
             // BtnFuncionarios
             // 
             this.BtnFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnFuncionarios.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnFuncionarios.Location = new System.Drawing.Point(344, 329);
+            this.BtnFuncionarios.Location = new System.Drawing.Point(344, 264);
             this.BtnFuncionarios.Name = "BtnFuncionarios";
             this.BtnFuncionarios.Size = new System.Drawing.Size(119, 33);
             this.BtnFuncionarios.TabIndex = 1;
@@ -111,7 +98,7 @@
             // 
             this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnSair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnSair.Location = new System.Drawing.Point(344, 391);
+            this.BtnSair.Location = new System.Drawing.Point(344, 326);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Size = new System.Drawing.Size(119, 33);
             this.BtnSair.TabIndex = 2;
@@ -124,10 +111,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(800, 467);
+            this.ClientSize = new System.Drawing.Size(800, 397);
             this.Controls.Add(this.BtnSair);
             this.Controls.Add(this.BtnFuncionarios);
-            this.Controls.Add(this.BtnRemedios);
             this.Controls.Add(this.BtnMedicos);
             this.Controls.Add(this.BtnPacientes);
             this.Controls.Add(this.BtnConsultas);
@@ -146,7 +132,6 @@
         private System.Windows.Forms.Button BtnConsultas;
         private System.Windows.Forms.Button BtnPacientes;
         private System.Windows.Forms.Button BtnMedicos;
-        private System.Windows.Forms.Button BtnRemedios;
         private System.Windows.Forms.Button BtnFuncionarios;
         private System.Windows.Forms.Button BtnSair;
     }

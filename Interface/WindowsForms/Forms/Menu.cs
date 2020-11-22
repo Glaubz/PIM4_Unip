@@ -36,13 +36,6 @@ namespace WindowsForms.Forms
             medicos.Show();
         }
 
-        private void BtnRemedios_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Remedios remedios = new Remedios();
-            remedios.Show();
-        }
-
         private void BtnFuncionarios_Click(object sender, EventArgs e)
         {
             this.Hide();

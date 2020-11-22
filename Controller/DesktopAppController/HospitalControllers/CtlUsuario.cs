@@ -11,14 +11,14 @@ using System.IO;
 
 namespace HospitalControllers
 {
-    public class CtlAcesso
+    public class CtlUsuario
     {   
-        public CtlAcesso()
+        public CtlUsuario()
         {
             
         }
 
-        public MdlAcesso GetUsuarioAsync(string login, string senha)
+        public MdlUsuario GetUsuarioAsync(string login, string senha)
         {
             try
             {
@@ -33,7 +33,7 @@ namespace HospitalControllers
                     StreamReader reader = new StreamReader(streamDados);
                     object objResponse = reader.ReadToEnd();
 
-                    var usuario = JsonConvert.DeserializeObject<MdlAcesso>(objResponse.ToString());
+                    var usuario = JsonConvert.DeserializeObject<MdlUsuario>(objResponse.ToString());
 
                     return usuario;
                 }
