@@ -35,33 +35,8 @@ namespace WindowsForms.Forms
         private void BtnConsultar_Click(object sender, EventArgs e)
         {
             var _funcionarios = funcionario.ListaFuncionarios();
-            //DgvFuncionarios.DataSource = _funcionarios;
 
-            if (!string.IsNullOrEmpty(CbIdCargo.Text.Split("-")[0]) && CbIdCargo.Text != "Qualquer cargo")
-            {
-                var idCargo = int.Parse(CbIdCargo.Text.Split("-")[0]);
-
-                var dados = from func in _funcionarios
-                            where func.Cargo.Id == idCargo
-                            select new
-                            {
-                                func.Id,
-                                func.Pessoa.Usuario.Login,
-                                func.Pessoa.Nome,
-                                func.Pessoa.Usuario.Email,
-                                func.Salario,
-                                Terceirizado = func.Terceirizado.ToString(),
-                                CargoId = func.Cargo.Id,
-                                Cargo = func.Cargo.Descricao,
-                                DataNascimento = func.Pessoa.DataNascimento.Date,
-                                Genero = func.Pessoa.Genero,
-                                Cpf = func.Pessoa.Cpf,
-                                Rg = func.Pessoa.Rg
-                            };
-
-                DgvFuncionarios.DataSource = dados.ToList();
-            }
-            else if (!string.IsNullOrEmpty(TxtIdFuncionario.Text))
+            if (!string.IsNullOrEmpty(TxtIdFuncionario.Text))
             {
                 var idFunc = int.Parse(TxtIdFuncionario.Text);
 
@@ -85,6 +60,32 @@ namespace WindowsForms.Forms
 
                 DgvFuncionarios.DataSource = dados.ToList();
             }
+
+            else if (!string.IsNullOrEmpty(CbIdCargo.Text.Split("-")[0]) && CbIdCargo.Text != "Qualquer cargo")
+            {
+                var idCargo = int.Parse(CbIdCargo.Text.Split("-")[0]);
+
+                var dados = from func in _funcionarios
+                            where func.Cargo.Id == idCargo
+                            select new
+                            {
+                                func.Id,
+                                func.Pessoa.Usuario.Login,
+                                func.Pessoa.Nome,
+                                func.Pessoa.Usuario.Email,
+                                func.Salario,
+                                Terceirizado = func.Terceirizado.ToString(),
+                                CargoId = func.Cargo.Id,
+                                Cargo = func.Cargo.Descricao,
+                                DataNascimento = func.Pessoa.DataNascimento.Date,
+                                Genero = func.Pessoa.Genero,
+                                Cpf = func.Pessoa.Cpf,
+                                Rg = func.Pessoa.Rg
+                            };
+
+                DgvFuncionarios.DataSource = dados.ToList();
+            }
+            
             else
             {
                 var dados = from func in _funcionarios
