@@ -127,9 +127,35 @@ namespace HospitalControllers
             }
         }
 
-        public void AtualizarFuncionario()
+        public async Task<bool> AtualizarFuncionario(MdlFuncionario funcionario, int id)
         {
+            try
+            {
+                var client = new HttpClient();
+                client.BaseAddress = new Uri("http://localhost:5000/api/");
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
+                string json = JsonConvert.SerializeObject(funcionario);
+
+                string verJson = json.ToString();
+                var a = "Teste: " + verJson;
+
+                HttpResponseMessage response = await client.PutAsync($"funcionario/{id}", new StringContent(json, Encoding.UTF8, "application/json"));
+                response.EnsureSuccessStatusCode();
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
     }
