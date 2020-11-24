@@ -14,5 +14,17 @@ namespace WindowsForms.Forms
         {
             InitializeComponent();
         }
+
+        private void BtnMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
+
+        private void BtnConsultar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
