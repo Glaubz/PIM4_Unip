@@ -40,12 +40,22 @@
             this.TxtRg = new System.Windows.Forms.TextBox();
             this.TxtCpf = new System.Windows.Forms.TextBox();
             this.TxtDataNascimento = new System.Windows.Forms.TextBox();
-            this.BtnOK = new System.Windows.Forms.Button();
             this.BtnAtualizar = new System.Windows.Forms.Button();
-            this.BtnFechar = new System.Windows.Forms.Button();
+            this.BtnDeletar = new System.Windows.Forms.Button();
             this.BtnConsultar = new System.Windows.Forms.Button();
             this.BtnCriar = new System.Windows.Forms.Button();
             this.BtnMenu = new System.Windows.Forms.Button();
+            this.LblEmail = new System.Windows.Forms.Label();
+            this.TxtEmail = new System.Windows.Forms.TextBox();
+            this.LblSenha = new System.Windows.Forms.Label();
+            this.TxtSenha = new System.Windows.Forms.TextBox();
+            this.LblLogin = new System.Windows.Forms.Label();
+            this.TxtLogin = new System.Windows.Forms.TextBox();
+            this.TxtNumConvenio = new System.Windows.Forms.TextBox();
+            this.LblNumConvenio = new System.Windows.Forms.Label();
+            this.LblIdPaciente = new System.Windows.Forms.Label();
+            this.TxtIdPaciente = new System.Windows.Forms.TextBox();
+            this.BtnAjuda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvPacientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,107 +73,100 @@
             // 
             this.DgvPacientes.BackgroundColor = System.Drawing.SystemColors.ScrollBar;
             this.DgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvPacientes.Location = new System.Drawing.Point(21, 177);
+            this.DgvPacientes.Location = new System.Drawing.Point(21, 256);
             this.DgvPacientes.Name = "DgvPacientes";
-            this.DgvPacientes.Size = new System.Drawing.Size(756, 251);
+            this.DgvPacientes.Size = new System.Drawing.Size(756, 172);
             this.DgvPacientes.TabIndex = 1;
             this.DgvPacientes.Text = "dataGridView1";
             // 
             // LblNome
             // 
             this.LblNome.AutoSize = true;
-            this.LblNome.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblNome.Location = new System.Drawing.Point(21, 52);
+            this.LblNome.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblNome.Location = new System.Drawing.Point(230, 55);
             this.LblNome.Name = "LblNome";
-            this.LblNome.Size = new System.Drawing.Size(52, 23);
+            this.LblNome.Size = new System.Drawing.Size(45, 20);
             this.LblNome.TabIndex = 2;
             this.LblNome.Text = "Nome";
             // 
             // LblRG
             // 
             this.LblRG.AutoSize = true;
-            this.LblRG.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblRG.Location = new System.Drawing.Point(21, 88);
+            this.LblRG.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblRG.Location = new System.Drawing.Point(21, 133);
             this.LblRG.Name = "LblRG";
-            this.LblRG.Size = new System.Drawing.Size(33, 23);
+            this.LblRG.Size = new System.Drawing.Size(28, 20);
             this.LblRG.TabIndex = 2;
             this.LblRG.Text = "RG";
             // 
             // LblCpf
             // 
             this.LblCpf.AutoSize = true;
-            this.LblCpf.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblCpf.Location = new System.Drawing.Point(413, 88);
+            this.LblCpf.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCpf.Location = new System.Drawing.Point(21, 169);
             this.LblCpf.Name = "LblCpf";
-            this.LblCpf.Size = new System.Drawing.Size(41, 23);
+            this.LblCpf.Size = new System.Drawing.Size(35, 20);
             this.LblCpf.TabIndex = 2;
             this.LblCpf.Text = "CPF";
             // 
             // LblDataNascimento
             // 
             this.LblDataNascimento.AutoSize = true;
-            this.LblDataNascimento.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDataNascimento.Location = new System.Drawing.Point(21, 126);
+            this.LblDataNascimento.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblDataNascimento.Location = new System.Drawing.Point(21, 205);
             this.LblDataNascimento.Name = "LblDataNascimento";
-            this.LblDataNascimento.Size = new System.Drawing.Size(150, 23);
+            this.LblDataNascimento.Size = new System.Drawing.Size(129, 20);
             this.LblDataNascimento.TabIndex = 2;
             this.LblDataNascimento.Text = "Data de Nascimento";
             // 
             // LblGenero
             // 
             this.LblGenero.AutoSize = true;
-            this.LblGenero.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblGenero.Location = new System.Drawing.Point(519, 126);
+            this.LblGenero.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblGenero.Location = new System.Drawing.Point(519, 205);
             this.LblGenero.Name = "LblGenero";
-            this.LblGenero.Size = new System.Drawing.Size(63, 23);
+            this.LblGenero.Size = new System.Drawing.Size(54, 20);
             this.LblGenero.TabIndex = 2;
             this.LblGenero.Text = "Gênero";
             // 
             // CbGenero
             // 
             this.CbGenero.FormattingEnabled = true;
-            this.CbGenero.Location = new System.Drawing.Point(602, 126);
+            this.CbGenero.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.CbGenero.Location = new System.Drawing.Point(602, 205);
             this.CbGenero.Name = "CbGenero";
             this.CbGenero.Size = new System.Drawing.Size(175, 23);
             this.CbGenero.TabIndex = 3;
             // 
             // TxtNome
             // 
-            this.TxtNome.Location = new System.Drawing.Point(90, 52);
+            this.TxtNome.Location = new System.Drawing.Point(281, 52);
             this.TxtNome.Name = "TxtNome";
-            this.TxtNome.Size = new System.Drawing.Size(687, 23);
+            this.TxtNome.Size = new System.Drawing.Size(496, 23);
             this.TxtNome.TabIndex = 4;
             // 
             // TxtRg
             // 
-            this.TxtRg.Location = new System.Drawing.Point(90, 88);
+            this.TxtRg.Location = new System.Drawing.Point(90, 133);
             this.TxtRg.Name = "TxtRg";
             this.TxtRg.Size = new System.Drawing.Size(306, 23);
             this.TxtRg.TabIndex = 5;
             // 
             // TxtCpf
             // 
-            this.TxtCpf.Location = new System.Drawing.Point(471, 88);
+            this.TxtCpf.Location = new System.Drawing.Point(90, 169);
             this.TxtCpf.Name = "TxtCpf";
             this.TxtCpf.Size = new System.Drawing.Size(306, 23);
             this.TxtCpf.TabIndex = 5;
             // 
             // TxtDataNascimento
             // 
-            this.TxtDataNascimento.Location = new System.Drawing.Point(187, 126);
+            this.TxtDataNascimento.Location = new System.Drawing.Point(187, 205);
             this.TxtDataNascimento.Name = "TxtDataNascimento";
             this.TxtDataNascimento.Size = new System.Drawing.Size(306, 23);
             this.TxtDataNascimento.TabIndex = 6;
-            // 
-            // BtnOK
-            // 
-            this.BtnOK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnOK.Location = new System.Drawing.Point(579, 12);
-            this.BtnOK.Name = "BtnOK";
-            this.BtnOK.Size = new System.Drawing.Size(75, 23);
-            this.BtnOK.TabIndex = 3;
-            this.BtnOK.Text = "OK";
-            this.BtnOK.UseVisualStyleBackColor = true;
             // 
             // BtnAtualizar
             // 
@@ -174,16 +177,18 @@
             this.BtnAtualizar.TabIndex = 2;
             this.BtnAtualizar.Text = "Atualizar";
             this.BtnAtualizar.UseVisualStyleBackColor = true;
+            this.BtnAtualizar.Click += new System.EventHandler(this.BtnAtualizar_Click);
             // 
-            // BtnFechar
+            // BtnDeletar
             // 
-            this.BtnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnFechar.Location = new System.Drawing.Point(370, 12);
-            this.BtnFechar.Name = "BtnFechar";
-            this.BtnFechar.Size = new System.Drawing.Size(75, 23);
-            this.BtnFechar.TabIndex = 2;
-            this.BtnFechar.Text = "Fechar";
-            this.BtnFechar.UseVisualStyleBackColor = true;
+            this.BtnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnDeletar.Location = new System.Drawing.Point(370, 12);
+            this.BtnDeletar.Name = "BtnDeletar";
+            this.BtnDeletar.Size = new System.Drawing.Size(75, 23);
+            this.BtnDeletar.TabIndex = 2;
+            this.BtnDeletar.Text = "Deletar";
+            this.BtnDeletar.UseVisualStyleBackColor = true;
+            this.BtnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
             // 
             // BtnConsultar
             // 
@@ -194,6 +199,7 @@
             this.BtnConsultar.TabIndex = 2;
             this.BtnConsultar.Text = "Consultar";
             this.BtnConsultar.UseVisualStyleBackColor = true;
+            this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
             // BtnCriar
             // 
@@ -204,11 +210,12 @@
             this.BtnCriar.TabIndex = 2;
             this.BtnCriar.Text = "Criar";
             this.BtnCriar.UseVisualStyleBackColor = true;
+            this.BtnCriar.Click += new System.EventHandler(this.BtnCriar_Click);
             // 
             // BtnMenu
             // 
             this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnMenu.Location = new System.Drawing.Point(702, 11);
+            this.BtnMenu.Location = new System.Drawing.Point(702, 12);
             this.BtnMenu.Name = "BtnMenu";
             this.BtnMenu.Size = new System.Drawing.Size(75, 23);
             this.BtnMenu.TabIndex = 7;
@@ -216,22 +223,128 @@
             this.BtnMenu.UseVisualStyleBackColor = true;
             this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
+            // LblEmail
+            // 
+            this.LblEmail.AutoSize = true;
+            this.LblEmail.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblEmail.Location = new System.Drawing.Point(413, 172);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Size = new System.Drawing.Size(42, 20);
+            this.LblEmail.TabIndex = 4;
+            this.LblEmail.Text = "Email";
+            // 
+            // TxtEmail
+            // 
+            this.TxtEmail.Location = new System.Drawing.Point(471, 169);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(306, 23);
+            this.TxtEmail.TabIndex = 6;
+            // 
+            // LblSenha
+            // 
+            this.LblSenha.AutoSize = true;
+            this.LblSenha.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblSenha.Location = new System.Drawing.Point(413, 136);
+            this.LblSenha.Name = "LblSenha";
+            this.LblSenha.Size = new System.Drawing.Size(47, 20);
+            this.LblSenha.TabIndex = 4;
+            this.LblSenha.Text = "Senha";
+            // 
+            // TxtSenha
+            // 
+            this.TxtSenha.Location = new System.Drawing.Point(471, 134);
+            this.TxtSenha.Name = "TxtSenha";
+            this.TxtSenha.Size = new System.Drawing.Size(306, 23);
+            this.TxtSenha.TabIndex = 6;
+            // 
+            // LblLogin
+            // 
+            this.LblLogin.AutoSize = true;
+            this.LblLogin.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblLogin.Location = new System.Drawing.Point(413, 99);
+            this.LblLogin.Name = "LblLogin";
+            this.LblLogin.Size = new System.Drawing.Size(42, 20);
+            this.LblLogin.TabIndex = 4;
+            this.LblLogin.Text = "Login";
+            // 
+            // TxtLogin
+            // 
+            this.TxtLogin.Location = new System.Drawing.Point(471, 97);
+            this.TxtLogin.Name = "TxtLogin";
+            this.TxtLogin.Size = new System.Drawing.Size(306, 23);
+            this.TxtLogin.TabIndex = 6;
+            // 
+            // TxtNumConvenio
+            // 
+            this.TxtNumConvenio.Location = new System.Drawing.Point(111, 96);
+            this.TxtNumConvenio.Name = "TxtNumConvenio";
+            this.TxtNumConvenio.Size = new System.Drawing.Size(285, 23);
+            this.TxtNumConvenio.TabIndex = 4;
+            // 
+            // LblNumConvenio
+            // 
+            this.LblNumConvenio.AutoSize = true;
+            this.LblNumConvenio.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblNumConvenio.Location = new System.Drawing.Point(21, 99);
+            this.LblNumConvenio.Name = "LblNumConvenio";
+            this.LblNumConvenio.Size = new System.Drawing.Size(84, 20);
+            this.LblNumConvenio.TabIndex = 2;
+            this.LblNumConvenio.Text = "Nº Convênio";
+            // 
+            // LblIdPaciente
+            // 
+            this.LblIdPaciente.AutoSize = true;
+            this.LblIdPaciente.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblIdPaciente.Location = new System.Drawing.Point(21, 55);
+            this.LblIdPaciente.Name = "LblIdPaciente";
+            this.LblIdPaciente.Size = new System.Drawing.Size(77, 20);
+            this.LblIdPaciente.TabIndex = 2;
+            this.LblIdPaciente.Text = "ID Paciente";
+            // 
+            // TxtIdPaciente
+            // 
+            this.TxtIdPaciente.Location = new System.Drawing.Point(111, 52);
+            this.TxtIdPaciente.Name = "TxtIdPaciente";
+            this.TxtIdPaciente.Size = new System.Drawing.Size(100, 23);
+            this.TxtIdPaciente.TabIndex = 8;
+            // 
+            // BtnAjuda
+            // 
+            this.BtnAjuda.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnAjuda.Location = new System.Drawing.Point(589, 12);
+            this.BtnAjuda.Name = "BtnAjuda";
+            this.BtnAjuda.Size = new System.Drawing.Size(75, 23);
+            this.BtnAjuda.TabIndex = 2;
+            this.BtnAjuda.Text = "Ajuda";
+            this.BtnAjuda.UseVisualStyleBackColor = true;
+            this.BtnAjuda.Click += new System.EventHandler(this.BtnAtualizar_Click);
+            // 
             // Pacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnAjuda);
+            this.Controls.Add(this.TxtIdPaciente);
+            this.Controls.Add(this.LblIdPaciente);
+            this.Controls.Add(this.LblNumConvenio);
+            this.Controls.Add(this.TxtNumConvenio);
+            this.Controls.Add(this.TxtLogin);
+            this.Controls.Add(this.LblLogin);
+            this.Controls.Add(this.TxtSenha);
+            this.Controls.Add(this.LblSenha);
+            this.Controls.Add(this.TxtEmail);
+            this.Controls.Add(this.LblEmail);
             this.Controls.Add(this.BtnMenu);
             this.Controls.Add(this.BtnCriar);
             this.Controls.Add(this.BtnConsultar);
-            this.Controls.Add(this.BtnFechar);
+            this.Controls.Add(this.BtnDeletar);
             this.Controls.Add(this.BtnAtualizar);
-            this.Controls.Add(this.BtnOK);
             this.Controls.Add(this.TxtDataNascimento);
-            this.Controls.Add(this.TxtCpf);
-            this.Controls.Add(this.TxtRg);
             this.Controls.Add(this.TxtNome);
+            this.Controls.Add(this.TxtRg);
+            this.Controls.Add(this.TxtCpf);
             this.Controls.Add(this.CbGenero);
             this.Controls.Add(this.LblGenero);
             this.Controls.Add(this.LblDataNascimento);
@@ -241,6 +354,7 @@
             this.Controls.Add(this.DgvPacientes);
             this.Controls.Add(this.LblPacientes);
             this.Name = "Pacientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pacientes";
             ((System.ComponentModel.ISupportInitialize)(this.DgvPacientes)).EndInit();
             this.ResumeLayout(false);
@@ -262,11 +376,21 @@
         private System.Windows.Forms.TextBox TxtRg;
         private System.Windows.Forms.TextBox TxtCpf;
         private System.Windows.Forms.TextBox TxtDataNascimento;
-        private System.Windows.Forms.Button BtnOK;
         private System.Windows.Forms.Button BtnAtualizar;
-        private System.Windows.Forms.Button BtnFechar;
+        private System.Windows.Forms.Button BtnDeletar;
         private System.Windows.Forms.Button BtnConsultar;
         private System.Windows.Forms.Button BtnCriar;
         private System.Windows.Forms.Button BtnMenu;
+        private System.Windows.Forms.Label LblEmail;
+        private System.Windows.Forms.TextBox TxtEmail;
+        private System.Windows.Forms.Label LblSenha;
+        private System.Windows.Forms.TextBox TxtSenha;
+        private System.Windows.Forms.Label LblLogin;
+        private System.Windows.Forms.TextBox TxtLogin;
+        private System.Windows.Forms.TextBox TxtNumConvenio;
+        private System.Windows.Forms.Label LblNumConvenio;
+        private System.Windows.Forms.Label LblIdPaciente;
+        private System.Windows.Forms.TextBox TxtIdPaciente;
+        private System.Windows.Forms.Button BtnAjuda;
     }
 }

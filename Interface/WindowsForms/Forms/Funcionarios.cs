@@ -169,7 +169,6 @@ namespace WindowsForms.Forms
             {
                 throw ex;
             }
-            
         }
 
         private async void BtnAtualizar_Click(object sender, EventArgs e)
