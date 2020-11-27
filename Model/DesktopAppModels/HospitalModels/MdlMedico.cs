@@ -12,6 +12,7 @@ namespace HospitalModels
         public int EspecialidadeId { get; set; }
         public MdlPessoa Pessoa { get; set; }
         public MdlEspecialidade Especialidade { get; set; }
+        public List<MdlConsulta> Consultas { get; set; }
     }
 
 }

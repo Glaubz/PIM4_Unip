@@ -32,9 +32,9 @@
             this.LblConsultas = new System.Windows.Forms.Label();
             this.BtnCriar = new System.Windows.Forms.Button();
             this.BtnConsultar = new System.Windows.Forms.Button();
-            this.BtnFechar = new System.Windows.Forms.Button();
+            this.BtnDeletar = new System.Windows.Forms.Button();
             this.BtnAtualizar = new System.Windows.Forms.Button();
-            this.BtnOK = new System.Windows.Forms.Button();
+            this.BtnAjuda = new System.Windows.Forms.Button();
             this.LblIdConsulta = new System.Windows.Forms.Label();
             this.LblDataConsulta = new System.Windows.Forms.Label();
             this.LblDescricaoEnfermidade = new System.Windows.Forms.Label();
@@ -52,8 +52,6 @@
             this.TxtIdMedico = new System.Windows.Forms.TextBox();
             this.TxtNomeMedico = new System.Windows.Forms.TextBox();
             this.BtnMenu = new System.Windows.Forms.Button();
-            this.LblModo = new System.Windows.Forms.Label();
-            this.LblValorModo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgvConsultas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,16 +97,16 @@
             this.BtnConsultar.UseVisualStyleBackColor = true;
             this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
-            // BtnFechar
+            // BtnDeletar
             // 
-            this.BtnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnFechar.Location = new System.Drawing.Point(400, 14);
-            this.BtnFechar.Name = "BtnFechar";
-            this.BtnFechar.Size = new System.Drawing.Size(75, 23);
-            this.BtnFechar.TabIndex = 2;
-            this.BtnFechar.Text = "Fechar";
-            this.BtnFechar.UseVisualStyleBackColor = true;
-            this.BtnFechar.Click += new System.EventHandler(this.BtnFechar_Click);
+            this.BtnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnDeletar.Location = new System.Drawing.Point(400, 14);
+            this.BtnDeletar.Name = "BtnDeletar";
+            this.BtnDeletar.Size = new System.Drawing.Size(75, 23);
+            this.BtnDeletar.TabIndex = 2;
+            this.BtnDeletar.Text = "Deletar";
+            this.BtnDeletar.UseVisualStyleBackColor = true;
+            this.BtnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
             // 
             // BtnAtualizar
             // 
@@ -121,15 +119,15 @@
             this.BtnAtualizar.UseVisualStyleBackColor = true;
             this.BtnAtualizar.Click += new System.EventHandler(this.BtnAtualizar_Click);
             // 
-            // BtnOK
+            // BtnAjuda
             // 
-            this.BtnOK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnOK.Location = new System.Drawing.Point(774, 14);
-            this.BtnOK.Name = "BtnOK";
-            this.BtnOK.Size = new System.Drawing.Size(75, 23);
-            this.BtnOK.TabIndex = 3;
-            this.BtnOK.Text = "OK";
-            this.BtnOK.UseVisualStyleBackColor = true;
+            this.BtnAjuda.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnAjuda.Location = new System.Drawing.Point(774, 14);
+            this.BtnAjuda.Name = "BtnAjuda";
+            this.BtnAjuda.Size = new System.Drawing.Size(75, 23);
+            this.BtnAjuda.TabIndex = 3;
+            this.BtnAjuda.Text = "Ajuda";
+            this.BtnAjuda.UseVisualStyleBackColor = true;
             // 
             // LblIdConsulta
             // 
@@ -278,34 +276,12 @@
             this.BtnMenu.UseVisualStyleBackColor = true;
             this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
-            // LblModo
-            // 
-            this.LblModo.AutoSize = true;
-            this.LblModo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblModo.Location = new System.Drawing.Point(606, 16);
-            this.LblModo.Name = "LblModo";
-            this.LblModo.Size = new System.Drawing.Size(56, 18);
-            this.LblModo.TabIndex = 8;
-            this.LblModo.Text = "Modo: ";
-            // 
-            // LblValorModo
-            // 
-            this.LblValorModo.AutoSize = true;
-            this.LblValorModo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblValorModo.Location = new System.Drawing.Point(668, 16);
-            this.LblValorModo.Name = "LblValorModo";
-            this.LblValorModo.Size = new System.Drawing.Size(59, 18);
-            this.LblValorModo.TabIndex = 8;
-            this.LblValorModo.Text = "<valor>";
-            // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1019, 509);
-            this.Controls.Add(this.LblValorModo);
-            this.Controls.Add(this.LblModo);
             this.Controls.Add(this.BtnMenu);
             this.Controls.Add(this.TxtNomeMedico);
             this.Controls.Add(this.TxtIdMedico);
@@ -323,9 +299,9 @@
             this.Controls.Add(this.LblDescricaoEnfermidade);
             this.Controls.Add(this.LblDataConsulta);
             this.Controls.Add(this.LblIdConsulta);
-            this.Controls.Add(this.BtnOK);
+            this.Controls.Add(this.BtnAjuda);
             this.Controls.Add(this.BtnAtualizar);
-            this.Controls.Add(this.BtnFechar);
+            this.Controls.Add(this.BtnDeletar);
             this.Controls.Add(this.BtnConsultar);
             this.Controls.Add(this.BtnCriar);
             this.Controls.Add(this.LblConsultas);
@@ -345,9 +321,9 @@
         private System.Windows.Forms.Label LblConsultas;
         private System.Windows.Forms.Button BtnCriar;
         private System.Windows.Forms.Button BtnConsultar;
-        private System.Windows.Forms.Button BtnFechar;
+        private System.Windows.Forms.Button BtnDeletar;
         private System.Windows.Forms.Button BtnAtualizar;
-        private System.Windows.Forms.Button BtnOK;
+        private System.Windows.Forms.Button BtnAjuda;
         private System.Windows.Forms.Label LblIdConsulta;
         private System.Windows.Forms.Label LblDataConsulta;
         private System.Windows.Forms.Label LblDescricaoEnfermidade;
@@ -365,7 +341,5 @@
         private System.Windows.Forms.TextBox TxtIdMedico;
         private System.Windows.Forms.TextBox TxtNomeMedico;
         private System.Windows.Forms.Button BtnMenu;
-        private System.Windows.Forms.Label LblModo;
-        private System.Windows.Forms.Label LblValorModo;
     }
 }

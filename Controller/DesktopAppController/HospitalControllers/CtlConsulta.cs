@@ -10,18 +10,18 @@ using System.Threading.Tasks;
 
 namespace HospitalControllers
 {
-    public class CtlMedico
+    public class CtlConsulta
     {
-        public CtlMedico()
+        public CtlConsulta()
         {
 
         }
 
-        public List<MdlMedico> ListaMedicos()
+        public List<MdlConsulta> ListaConsultas()
         {
             try
             {
-                var requisicaoWeb = WebRequest.CreateHttp($"http://localhost:5000/api/medico");
+                var requisicaoWeb = WebRequest.CreateHttp($"http://localhost:5000/api/consulta");
 
                 requisicaoWeb.Method = "GET";
                 requisicaoWeb.UserAgent = "RequisicaoWebApiAtila";
@@ -32,9 +32,9 @@ namespace HospitalControllers
                     StreamReader reader = new StreamReader(streamDados);
                     object objResponse = reader.ReadToEnd();
 
-                    var medicos = JsonConvert.DeserializeObject<List<MdlMedico>>(objResponse.ToString());
+                    var consultas = JsonConvert.DeserializeObject<List<MdlConsulta>>(objResponse.ToString());
 
-                    return medicos;
+                    return consultas;
                 }
             }
             catch (Exception ex)
@@ -43,7 +43,24 @@ namespace HospitalControllers
             }
         }
 
-        public async Task<bool> CriarMedicoNoBanco(MdlMedico medico)
+        public HttpWebResponse DeletarConsulta(int id)
+        {
+            try
+            {
+                var requisicaoWeb = WebRequest.CreateHttp($"http://localhost:5000/api/consulta/{id}");
+
+                requisicaoWeb.Method = "DELETE";
+                requisicaoWeb.UserAgent = "RequisicaoWebApiAtila";
+
+                return (HttpWebResponse)requisicaoWeb.GetResponse();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<bool> CriarConsultaNoBanco(MdlConsulta consulta)
         {
             try
             {
@@ -51,12 +68,12 @@ namespace HospitalControllers
                 client.BaseAddress = new Uri("http://localhost:5000/api/");
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
-                string json = JsonConvert.SerializeObject(medico);
+                string json = JsonConvert.SerializeObject(consulta);
 
                 string verJson = json.ToString();
                 var a = "Teste: " + verJson;
 
-                HttpResponseMessage response = await client.PostAsync("medico", new StringContent(json, Encoding.UTF8, "application/json"));
+                HttpResponseMessage response = await client.PostAsync("consulta", new StringContent(json, Encoding.UTF8, "application/json"));
                 response.EnsureSuccessStatusCode();
 
                 if (response.IsSuccessStatusCode)
@@ -74,24 +91,7 @@ namespace HospitalControllers
             }
         }
 
-        public HttpWebResponse DeletarMedico(int id)
-        {
-            try
-            {
-                var requisicaoWeb = WebRequest.CreateHttp($"http://localhost:5000/api/medico/{id}");
-
-                requisicaoWeb.Method = "DELETE";
-                requisicaoWeb.UserAgent = "RequisicaoWebApiAtila";
-
-                return (HttpWebResponse)requisicaoWeb.GetResponse();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public async Task<bool> AtualizarMedico(MdlMedico medico, int id)
+        public async Task<bool> AtualizarConsulta(MdlConsulta consulta, int id)
         {
             try
             {
@@ -99,12 +99,12 @@ namespace HospitalControllers
                 client.BaseAddress = new Uri("http://localhost:5000/api/");
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
-                string json = JsonConvert.SerializeObject(medico);
+                string json = JsonConvert.SerializeObject(consulta);
 
                 string verJson = json.ToString();
                 var a = "Teste: " + verJson;
 
-                HttpResponseMessage response = await client.PutAsync($"medico/{id}", new StringContent(json, Encoding.UTF8, "application/json"));
+                HttpResponseMessage response = await client.PutAsync($"consulta/{id}", new StringContent(json, Encoding.UTF8, "application/json"));
                 response.EnsureSuccessStatusCode();
 
                 if (response.IsSuccessStatusCode)

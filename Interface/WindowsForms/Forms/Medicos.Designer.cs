@@ -81,6 +81,7 @@
             this.BtnAtualizar.TabIndex = 2;
             this.BtnAtualizar.Text = "Atualizar";
             this.BtnAtualizar.UseVisualStyleBackColor = true;
+            this.BtnAtualizar.Click += new System.EventHandler(this.BtnAtualizar_Click);
             // 
             // BtnDeletar
             // 
@@ -91,6 +92,7 @@
             this.BtnDeletar.TabIndex = 2;
             this.BtnDeletar.Text = "Deletar";
             this.BtnDeletar.UseVisualStyleBackColor = true;
+            this.BtnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
             // 
             // BtnConsultar
             // 
@@ -112,6 +114,7 @@
             this.BtnCriar.TabIndex = 2;
             this.BtnCriar.Text = "Criar";
             this.BtnCriar.UseVisualStyleBackColor = true;
+            this.BtnCriar.Click += new System.EventHandler(this.BtnCriar_Click);
             // 
             // LblMedicos
             // 
@@ -127,7 +130,7 @@
             // 
             this.TxtNome.Location = new System.Drawing.Point(408, 67);
             this.TxtNome.Name = "TxtNome";
-            this.TxtNome.Size = new System.Drawing.Size(175, 23);
+            this.TxtNome.Size = new System.Drawing.Size(199, 23);
             this.TxtNome.TabIndex = 6;
             // 
             // TxtIdMedico
@@ -198,14 +201,14 @@
             // 
             this.TxtCpf.Location = new System.Drawing.Point(408, 112);
             this.TxtCpf.Name = "TxtCpf";
-            this.TxtCpf.Size = new System.Drawing.Size(175, 23);
+            this.TxtCpf.Size = new System.Drawing.Size(199, 23);
             this.TxtCpf.TabIndex = 6;
             // 
             // TxtRg
             // 
             this.TxtRg.Location = new System.Drawing.Point(408, 157);
             this.TxtRg.Name = "TxtRg";
-            this.TxtRg.Size = new System.Drawing.Size(175, 23);
+            this.TxtRg.Size = new System.Drawing.Size(199, 23);
             this.TxtRg.TabIndex = 6;
             // 
             // LblRg
@@ -220,16 +223,16 @@
             // 
             // TxtDataNascimento
             // 
-            this.TxtDataNascimento.Location = new System.Drawing.Point(723, 203);
+            this.TxtDataNascimento.Location = new System.Drawing.Point(759, 203);
             this.TxtDataNascimento.Name = "TxtDataNascimento";
-            this.TxtDataNascimento.Size = new System.Drawing.Size(245, 23);
+            this.TxtDataNascimento.Size = new System.Drawing.Size(209, 23);
             this.TxtDataNascimento.TabIndex = 6;
             // 
             // LblDataNascimento
             // 
             this.LblDataNascimento.AutoSize = true;
             this.LblDataNascimento.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDataNascimento.Location = new System.Drawing.Point(589, 203);
+            this.LblDataNascimento.Location = new System.Drawing.Point(624, 206);
             this.LblDataNascimento.Name = "LblDataNascimento";
             this.LblDataNascimento.Size = new System.Drawing.Size(129, 20);
             this.LblDataNascimento.TabIndex = 4;
@@ -247,16 +250,16 @@
             // 
             // TxtLogin
             // 
-            this.TxtLogin.Location = new System.Drawing.Point(723, 67);
+            this.TxtLogin.Location = new System.Drawing.Point(759, 67);
             this.TxtLogin.Name = "TxtLogin";
-            this.TxtLogin.Size = new System.Drawing.Size(245, 23);
+            this.TxtLogin.Size = new System.Drawing.Size(209, 23);
             this.TxtLogin.TabIndex = 6;
             // 
             // LblLogin
             // 
             this.LblLogin.AutoSize = true;
             this.LblLogin.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblLogin.Location = new System.Drawing.Point(589, 67);
+            this.LblLogin.Location = new System.Drawing.Point(624, 70);
             this.LblLogin.Name = "LblLogin";
             this.LblLogin.Size = new System.Drawing.Size(42, 20);
             this.LblLogin.TabIndex = 4;
@@ -264,16 +267,16 @@
             // 
             // TxtSenha
             // 
-            this.TxtSenha.Location = new System.Drawing.Point(723, 112);
+            this.TxtSenha.Location = new System.Drawing.Point(759, 112);
             this.TxtSenha.Name = "TxtSenha";
-            this.TxtSenha.Size = new System.Drawing.Size(245, 23);
+            this.TxtSenha.Size = new System.Drawing.Size(209, 23);
             this.TxtSenha.TabIndex = 6;
             // 
             // LblSenha
             // 
             this.LblSenha.AutoSize = true;
             this.LblSenha.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblSenha.Location = new System.Drawing.Point(589, 112);
+            this.LblSenha.Location = new System.Drawing.Point(624, 115);
             this.LblSenha.Name = "LblSenha";
             this.LblSenha.Size = new System.Drawing.Size(47, 20);
             this.LblSenha.TabIndex = 4;
@@ -281,16 +284,16 @@
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(723, 156);
+            this.TxtEmail.Location = new System.Drawing.Point(759, 156);
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(245, 23);
+            this.TxtEmail.Size = new System.Drawing.Size(209, 23);
             this.TxtEmail.TabIndex = 6;
             // 
             // LblEmail
             // 
             this.LblEmail.AutoSize = true;
             this.LblEmail.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblEmail.Location = new System.Drawing.Point(589, 156);
+            this.LblEmail.Location = new System.Drawing.Point(624, 159);
             this.LblEmail.Name = "LblEmail";
             this.LblEmail.Size = new System.Drawing.Size(42, 20);
             this.LblEmail.TabIndex = 4;
@@ -304,7 +307,7 @@
             "F"});
             this.CbGenero.Location = new System.Drawing.Point(408, 200);
             this.CbGenero.Name = "CbGenero";
-            this.CbGenero.Size = new System.Drawing.Size(175, 23);
+            this.CbGenero.Size = new System.Drawing.Size(199, 23);
             this.CbGenero.TabIndex = 10;
             // 
             // LblCpf
@@ -321,10 +324,10 @@
             // 
             this.CbIdEspecialidade.FormattingEnabled = true;
             this.CbIdEspecialidade.Items.AddRange(new object[] {
-            "1-Atendente",
-            "2-Técnico em Enfermagem",
-            "3-Técnico Administrativo",
-            "Qualquer cargo"});
+            "1-Ortopedista",
+            "2-Ginecologista",
+            "3-Cirurgião",
+            "Qualquer especialidade"});
             this.CbIdEspecialidade.Location = new System.Drawing.Point(148, 156);
             this.CbIdEspecialidade.Name = "CbIdEspecialidade";
             this.CbIdEspecialidade.Size = new System.Drawing.Size(194, 23);

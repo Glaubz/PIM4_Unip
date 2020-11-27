@@ -50,7 +50,7 @@
             // 
             this.BtnConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnConsultas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnConsultas.Location = new System.Drawing.Point(344, 77);
+            this.BtnConsultas.Location = new System.Drawing.Point(344, 265);
             this.BtnConsultas.Name = "BtnConsultas";
             this.BtnConsultas.Size = new System.Drawing.Size(119, 33);
             this.BtnConsultas.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             this.BtnPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnPacientes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnPacientes.Location = new System.Drawing.Point(344, 140);
+            this.BtnPacientes.Location = new System.Drawing.Point(344, 79);
             this.BtnPacientes.Name = "BtnPacientes";
             this.BtnPacientes.Size = new System.Drawing.Size(119, 33);
             this.BtnPacientes.TabIndex = 1;
@@ -74,7 +74,7 @@
             // 
             this.BtnMedicos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnMedicos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnMedicos.Location = new System.Drawing.Point(344, 202);
+            this.BtnMedicos.Location = new System.Drawing.Point(344, 141);
             this.BtnMedicos.Name = "BtnMedicos";
             this.BtnMedicos.Size = new System.Drawing.Size(119, 33);
             this.BtnMedicos.TabIndex = 1;
@@ -86,7 +86,7 @@
             // 
             this.BtnFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnFuncionarios.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnFuncionarios.Location = new System.Drawing.Point(344, 264);
+            this.BtnFuncionarios.Location = new System.Drawing.Point(344, 203);
             this.BtnFuncionarios.Name = "BtnFuncionarios";
             this.BtnFuncionarios.Size = new System.Drawing.Size(119, 33);
             this.BtnFuncionarios.TabIndex = 1;

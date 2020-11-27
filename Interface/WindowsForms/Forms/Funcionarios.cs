@@ -141,7 +141,6 @@ namespace WindowsForms.Forms
                 }
                 
             }
-
         }
 
         private async void BtnCriar_Click(object sender, EventArgs e)
@@ -150,6 +149,11 @@ namespace WindowsForms.Forms
             {
                 if (!ValidarCriacaoEAtualizacao())
                 {
+                }
+
+                else if (string.IsNullOrEmpty(CbIdCargo.Text) || CbIdCargo.Text == "Qualquer cargo")
+                {
+                    MessageBox.Show("Insira um ID de cargo válido!");
                 }
 
                 else
@@ -235,7 +239,8 @@ namespace WindowsForms.Forms
                                     "- Genero;\n" +
                                     "- Login;\n" +
                                     "- Senha;\n" +
-                                    "- Email;");
+                                    "- Email;\n" +
+                                    "- Data de Nascimento;");
 
                 return false;
             }
@@ -256,8 +261,8 @@ namespace WindowsForms.Forms
         {
             //MdlCargo mdlCargo = new MdlCargo()
             //{
-            //    Id = int.Parse(TxtIdCargo.Text),
-            //    Descricao = TxtCargo.Text
+            //    Id = int.Parse(CbIdCargo.Text.Split("-")[0]),
+            //    Descricao = CbIdCargo.Text.Split("-")[1]
             //};
 
             MdlUsuario mdlUsuario = new MdlUsuario()
@@ -286,6 +291,7 @@ namespace WindowsForms.Forms
                 Terceirizado = bool.Parse(CbTerceirizado.Text),
                 CargoId = int.Parse(CbIdCargo.Text.Split("-")[0]),
                 Pessoa = mdlPessoa
+                //Cargo = mdlCargo
             };
 
             return mdlFuncionario;

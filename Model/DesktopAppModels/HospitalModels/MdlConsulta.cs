@@ -13,6 +13,8 @@ namespace HospitalModels
         public bool Retorno { get; set; }
         public DateTime? DataRetorno { get; set; }
         public int PacienteId { get; set; }
-        public MdlPaciente Paciente { get; set; }
+        public string NomePaciente { get; set; }
+        public MdlMedicoConsulta MedicoConsulta { get; set; }
+        public string NomeMedico { get; set; }
     }
 }
